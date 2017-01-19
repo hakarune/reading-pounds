@@ -2,142 +2,184 @@
  
 	<head>
 	 
-		<title>Weights SoundBoard v0.1</title>
+		<title>Weights SoundBoard v2.0</title>
 	 
 		<!-- JavaScript -->
-		<script type="text/javascript">
-			// Put code here or set the src attribute
-		</script>
+
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/html5-reset.css">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		
+		
+		
+		<!-- Libraries -->
+		<script src="js/jquery.min.js"></script>
+		<script src='js/responsivevoice.js'></script>
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	 
 	<body>
 		<div class="container">
-
-			<div class="row">
+			<div class="input-field col s12">
 				
+				<select id="dropdown" name="dropdown" class="select-dropdown">
+					<option value="">Select Measurement Unit</option>
+					<option value="Pounds">Pounds</option>
+					<option value="Meters">Meters</option>
+					<option value="Liters">Liters</option>
+					<option value="Grams">Grams</option>
+					<option value="Feet">Feet</option>
+					<option value="Ounces">Ounces</option>
+				</select>
+				<!--label>Materialize Select</label-->
 			</div>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="0lbs">
-					<source src="media/0.0lbs.ogg" type="audio/ogg">
-					<source src="media/0.0lbs.mp3" type="audio/mpeg">
-					<source src="media/0.0lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('0lbs').play()">&#xF011</a>
-					<span>0lbs</span>
+			<div class="clearfix"></div>
+
+			<section>
+				<a rel="external" href="#" id="zero" type="button" value="Play">&#xF011</a>
+					<span>0</span>
 			</section>
 
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="halflb">
-					<source src="media/0.5lb.ogg" type="audio/ogg">
-					<source src="media/0.5lb.mp3" type="audio/mpeg">
-					<source src="media/0.5lb.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('halflb').play()">&#xF011</a>
-				<span>half lb</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="1lb">
-					<source src="media/1lb.ogg" type="audio/ogg">
-					<source src="media/1lb.mp3" type="audio/mpeg">
-					<source src="media/1lb.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('1lb').play()">&#xF011</a>
-				<span>1lb</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="1.5lbs">
-					<source src="media/1.5lbs.ogg" type="audio/ogg">
-					<source src="media/1.5lbs.mp3" type="audio/mpeg">
-					<source src="media/1.5lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('1.5lbs').play()">&#xF011</a>
-				<span>1.5lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="2lbs">
-					<source src="media/2lbs.ogg" type="audio/ogg">
-					<source src="media/2lbs.mp3" type="audio/mpeg">
-					<source src="media/2lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('2lbs').play()">&#xF011</a>
-				<span>2lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="2.5lbs">
-					<source src="media/2.5lbs.ogg" type="audio/ogg">
-					<source src="media/2.5lbs.mp3" type="audio/mpeg">
-					<source src="media/2.5lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('2.5lbs').play()">&#xF011</a>
-				<span>2.5lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="3lbs">
-					<source src="media/3lbs.ogg" type="audio/ogg">
-					<source src="media/3lbs.mp3" type="audio/mpeg">
-					<source src="media/3lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('3lbs').play()">&#xF011</a>
-				<span>3lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="3.5lbs">
-					<source src="media/3.5lbs.ogg" type="audio/ogg">
-					<source src="media/3.5lbs.mp3" type="audio/mpeg">
-					<source src="media/3.5lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('3.5lbs').play()">&#xF011</a>
-				<span>3.5lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="4lbs">
-					<source src="media/4lbs.ogg" type="audio/ogg">
-					<source src="media/4lbs.mp3" type="audio/mpeg">
-					<source src="media/4lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('4lbs').play()">&#xF011</a>
-				<span>4lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="4.5lbs">
-					<source src="media/4.5lbs.ogg" type="audio/ogg">
-					<source src="media/4.5lbs.mp3" type="audio/mpeg">
-					<source src="media/4.5lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('4.5lbs').play()">&#xF011</a>
-				<span>4.5lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="5lbs">
-					<source src="media/5lbs.ogg" type="audio/ogg">
-					<source src="media/5lbs.mp3" type="audio/mpeg">
-					<source src="media/5lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('5lbs').play()">&#xF011</a>
-				<span>5lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="5.5lbs">
-					<source src="media/5.5lbs.ogg" type="audio/ogg">
-					<source src="media/5.5lbs.mp3" type="audio/mpeg">
-					<source src="media/5.5lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('5.5lbs').play()">&#xF011</a>
-				<span>5.5lbs</span>
-				</section>
-			<section class="col-md-4 col-xs-6">
-				<audio preload="auto" id="6lbs">
-					<source src="media/6lbs.ogg" type="audio/ogg">
-					<source src="media/6lbs.mp3" type="audio/mpeg">
-					<source src="media/6lbs.wav" type="audio/wav">
-				</audio>
-				<a rel="external" href="#" id="button" type="button" class="btn btn-lg btn-block" onclick="document.getElementById('6lbs').play()">&#xF011</a>
-				<span>6lbs</span>
-				</section>
-
+			<section>
+				<a rel="external" href="#" id="half" type="button" value="Play">&#xF011</a>
+				<span>&frac12;</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="one" type="button" value="Play">&#xF011</a>
+				<span>1</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="onehalf" type="button" value="Play">&#xF011</a>
+				<span>1.5</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="two" type="button" value="Play">&#xF011</a>
+				<span>2</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="twohalf" type="button" value="Play">&#xF011</a>
+				<span>2.5</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="three" type="button" value="Play">&#xF011</a>
+				<span>3</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="threehalf" type="button" value="Play">&#xF011</a>
+				<span>3.5</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="four" type="button" value="Play">&#xF011</a>
+				<span>4</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="fourhalf" type="button" value="Play">&#xF011</a>
+				<span>4.5</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="five" type="button" value="Play">&#xF011</a>
+				<span>5</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="fivehalf" type="button" value="Play">&#xF011</a>
+				<span>5.5</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="six" type="button" value="Play">&#xF011</a>
+				<span>6</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="sixhalf" type="button" value="Play">&#xF011</a>
+				<span>6.5</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="seven" type="button" value="Play">&#xF011</a>
+				<span>7</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="sevenhalf" type="button" value="Play">&#xF011</a>
+				<span>7.5</span>
+			</section>
+			<!--section>
+				<a rel="external" href="#" id="eight" type="button" value="Play">&#xF011</a>
+				<span>8</span>
+			</section>
+			<section>
+				<a rel="external" href="#" id="eighthalf" type="button" value="Play">&#xF011</a>
+				<span>8.5</span>
+			</section-->
+			<div class="clearfix"></div>
+			<div class="input-field col s6">
+			<input placeholder="Add Name" id="name" spellcheck="false" type="text" class="validate"></input>
+			</div>
 		</div>
+
+		<script>
+			zero.onclick = function() {
+				responsiveVoice.speak('Zero' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			half.onclick = function() {
+				responsiveVoice.speak('half a' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			one.onclick = function() {
+				responsiveVoice.speak('One' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			onehalf.onclick = function() {
+				responsiveVoice.speak('One and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			two.onclick = function() {
+				responsiveVoice.speak('Two' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			twohalf.onclick = function() {
+				responsiveVoice.speak('Two and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			three.onclick = function() {
+				responsiveVoice.speak('Three' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			threehalf.onclick = function() {
+				responsiveVoice.speak('Three and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			four.onclick = function() {
+				responsiveVoice.speak('Four' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			fourhalf.onclick = function() {
+				responsiveVoice.speak('Four and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			five.onclick = function() {
+				responsiveVoice.speak('Five' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			fivehalf.onclick = function() {
+				responsiveVoice.speak('Five and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			six.onclick = function() {
+				responsiveVoice.speak('Six' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			sixhalf.onclick = function() {
+				responsiveVoice.speak('Six and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			seven.onclick = function() {
+				responsiveVoice.speak('Seven' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			sevenhalf.onclick = function() {
+				responsiveVoice.speak('Seven and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			
+			eight.onclick = function() {
+				responsiveVoice.speak('Eight' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+			eighthalf.onclick = function() {
+				responsiveVoice.speak('Eight and a half' + ' ' + $('#dropdown').val()  + ' ' + $('#name').val());
+			};
+		</script>
 	</body>
 </html>
