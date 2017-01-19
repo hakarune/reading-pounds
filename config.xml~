@@ -49,5 +49,9 @@
 
 		<!-- Core plugins -->
 		<plugin name="cordova-plugin-media" />
-		
+		<plugin name="cordova-plugin-whitelist" version="1" />
+		<plugin name="org.tt.plugin.tts" spec="1" source="pgb" />
+		<plugin name="org.apache.cordova.plugins.tts" value="org.apache.cordova.plugins.tts"/>
+		<allow-intent href="http://*/*" />
+		<allow-intent href="https://*/*" />
 	</widget>
