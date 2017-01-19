@@ -50,7 +50,6 @@
 		<!-- Core plugins -->
 		<plugin name="cordova-plugin-media" />
 		<plugin name="cordova-plugin-whitelist" version="1" />
-		<plugin name="org.apache.cordova.plugins.tts" value="org.apache.cordova.plugins.tts"/>
 		<plugin name="TTS" value="com.phonegap.plugins.speech.TTS"/>
 		<allow-intent href="http://*/*" />
 		<allow-intent href="https://*/*" />
