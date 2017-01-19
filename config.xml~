@@ -49,7 +49,5 @@
 
 		<!-- Core plugins -->
 		<plugin name="cordova-plugin-media" />
-		<plugin name="cordova-plugin-whitelist" version="1" />
-		<allow-intent href="http://*/*" />
-		<allow-intent href="https://*/*" />
+		
 	</widget>
