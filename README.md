@@ -1,2 +1,2 @@
 # reading-pounds
-Web app to read pounds 
+Web app to speak measurements 
